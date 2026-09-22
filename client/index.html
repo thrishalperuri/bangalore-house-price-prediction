@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HomePrice AI | Bangalore</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">⌂</span>
+            <span>HomePrice<span class="logo-accent">AI</span></span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#predict">Predict</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    AI-Powered Price Prediction
+                </div>
+
+                <h1>
+                    Find the estimated value
+                    <span>of your Bangalore home.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Enter your property details and get an estimated
+                    Bangalore house price powered by machine learning.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Prediction Section -->
+        <section class="prediction-section" id="predict">
+
+            <div class="prediction-card">
+
+                <div class="card-header">
+                    <div>
+                        <p class="section-label">PROPERTY DETAILS</p>
+                        <h2>Tell us about the property</h2>
+                    </div>
+
+                    <div class="card-icon">⌂</div>
+                </div>
+
+
+                <form id="prediction-form">
+
+                    <!-- Location -->
+                    <div class="input-group full-width">
+                        <label for="location">Location</label>
+
+                        <select id="location" name="location">
+                            <option value="">Select a location</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-row">
+
+                        <!-- Area -->
+                        <div class="input-group">
+                            <label for="sqft">Total Area</label>
+
+                            <div class="input-with-unit">
+                                <input
+                                    type="number"
+                                    id="sqft"
+                                    name="total_sqft"
+                                    placeholder="e.g. 1200"
+                                    min="100"
+                                >
+                                <span>sq ft</span>
+                            </div>
+                        </div>
+
+
+                        <!-- BHK -->
+                        <div class="input-group">
+                            <label for="bhk">Bedrooms</label>
+
+                            <select id="bhk" name="bhk">
+                                <option value="">Select BHK</option>
+                                <option value="1">1 BHK</option>
+                                <option value="2">2 BHK</option>
+                                <option value="3">3 BHK</option>
+                                <option value="4">4 BHK</option>
+                                <option value="5">5 BHK</option>
+                                <option value="6">6 BHK</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Bathrooms -->
+                    <div class="input-group">
+                        <label for="bath">Bathrooms</label>
+
+                        <select id="bath" name="bath">
+                            <option value="">Select bathrooms</option>
+                            <option value="1">1 Bathroom</option>
+                            <option value="2">2 Bathrooms</option>
+                            <option value="3">3 Bathrooms</option>
+                            <option value="4">4 Bathrooms</option>
+                            <option value="5">5 Bathrooms</option>
+                        </select>
+                    </div>
+
+
+                    <!-- Predict Button -->
+                    <button type="submit" class="predict-button">
+                        <span>Predict House Price</span>
+                        <span class="button-arrow">→</span>
+                    </button>
+
+                </form>
+
+
+                <!-- Result -->
+                 <div id="error-message" class="error-message hidden">
+    <span class="error-icon">!</span>
+    <span id="error-text"></span>
+</div>
+                <div id="result" class="result-card hidden">
+
+                    <p class="result-label">ESTIMATED PROPERTY VALUE</p>
+
+                    <div id="estimated-price" class="estimated-price">
+                        ₹ 0 Lakhs
+                    </div>
+
+                    <p class="result-note">
+                        This estimate is generated using your property details.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+
+            <div class="about-content">
+
+                <p class="section-label">HOW IT WORKS</p>
+
+                <h2>
+                    From property details
+                    <span>to a prediction.</span>
+                </h2>
+
+                <div class="steps">
+
+                    <div class="step">
+                        <span class="step-number">01</span>
+                        <h3>Enter details</h3>
+                        <p>Provide the location, area, BHK and bathroom details.</p>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">02</span>
+                        <h3>AI processes</h3>
+                        <p>Your inputs are sent to our machine learning model.</p>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">03</span>
+                        <h3>Get estimate</h3>
+                        <p>Receive an estimated Bangalore property price instantly.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>HomePrice AI · Bangalore House Price Prediction</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
