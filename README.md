@@ -1,4 +1,5 @@
 # Bangalore House Price Prediction
+![Bangalore House Price Prediction](client/output.png)
 
 A machine learning web application that predicts Bangalore house prices based on property details such as location, total area, number of bedrooms, and bathrooms.
 
